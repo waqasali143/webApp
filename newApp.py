@@ -32,7 +32,7 @@ if uploaded_file is not None:
         report.show_html("report.html")  # save HTML
 
     #    NEW TAB link 
-    st.markdown(
+        st.markdown(
         """
         <a href="report.html" target="_blank" style="font-size:18px;">
             👉 Open EDA Report in New Tab
