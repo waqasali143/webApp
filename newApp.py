@@ -28,8 +28,12 @@ if uploaded_file is not None:
     if st.checkbox("Generate EDA Report"):
         st.write("This may take a moment...")
         report = sv.analyze(data)
-        st.markdown(report.show_html(), unsafe_allow_html=True)
-
+        report.show_html("report.html")  # save HTML
+        
+        # Display the report in Streamlit
+        with open("report.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
+        components.html(html_content, height=800, scrolling=True)
 else:
     st.info("Please upload a CSV file to get started.")
 
