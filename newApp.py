@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import sweetviz as sv
+import streamlit.components.v1 as components
 
 # Page title
 st.title("Auto EDA Report Web App")
