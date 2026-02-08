@@ -34,7 +34,7 @@ if uploaded_file is not None:
         # Display the report in Streamlit
         with open("report.html", "r", encoding="utf-8") as f:
             html_content = f.read()
-        components.html(html_content, height=900, width=1600, scrolling=True)
+        components.html(html_content, height=900, width=1200, scrolling=True)
 
 else:
     st.info("Please upload a CSV file to get started.")
