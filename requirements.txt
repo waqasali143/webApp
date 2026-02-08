@@ -1,7 +1,8 @@
-numpy<1.24
-sweetviz
-streamlit
-setuptools
+streamlit==1.28.0
+sweetviz==3.4
+numpy==1.23.5
+setuptools>=70.0.0
+pandas>=1.5.3
 
 
 
