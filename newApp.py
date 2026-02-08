@@ -30,6 +30,16 @@ if uploaded_file is not None:
         st.write("This may take a moment...")
         report = sv.analyze(data)
         report.show_html("report.html")  # save HTML
+
+    #    NEW TAB link 
+    st.markdown(
+        """
+        <a href="report.html" target="_blank" style="font-size:18px;">
+            👉 Open EDA Report in New Tab
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
         
         # Display the report in Streamlit
         with open("report.html", "r", encoding="utf-8") as f:
